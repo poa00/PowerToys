@@ -4,11 +4,14 @@
 
 using System;
 using System.Runtime.CompilerServices;
+using System.Threading;
+
 using global::PowerToys.GPOWrapper;
 using Microsoft.PowerToys.Settings.UI.Library;
 using Microsoft.PowerToys.Settings.UI.Library.Helpers;
 using Microsoft.PowerToys.Settings.UI.Library.Interfaces;
 using Microsoft.PowerToys.Settings.UI.Library.ViewModels.Commands;
+using PowerToys.Interop;
 using Settings.UI.Library.Enumerations;
 
 namespace Microsoft.PowerToys.Settings.UI.ViewModels
@@ -109,7 +112,20 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             {
                 if (value != (int)Settings.Properties.AdditionalLinesPosition)
                 {
-                    Settings.Properties.AdditionalLinesPosition = (AdditionalLinesPosition)value;
+                    Settings.Properties.AdditionalLinesPosition = (HostsAdditionalLinesPosition)value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
+        public int Encoding
+        {
+            get => (int)Settings.Properties.Encoding;
+            set
+            {
+                if (value != (int)Settings.Properties.Encoding)
+                {
+                    Settings.Properties.Encoding = (HostsEncoding)value;
                     NotifyPropertyChanged();
                 }
             }
@@ -142,14 +158,14 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
 
         public void Launch()
         {
-            var actionName = "Launch";
+            string eventName = !_isElevated && LaunchAdministrator
+                ? Constants.ShowHostsAdminSharedEvent()
+                : Constants.ShowHostsSharedEvent();
 
-            if (!_isElevated && LaunchAdministrator)
+            using (var eventHandle = new EventWaitHandle(false, EventResetMode.AutoReset, eventName))
             {
-                actionName = "LaunchAdministrator";
+                eventHandle.Set();
             }
-
-            SendConfigMSG("{\"action\":{\"Hosts\":{\"action_name\":\"" + actionName + "\", \"value\":\"\"}}}");
         }
 
         public void NotifyPropertyChanged([CallerMemberName] string propertyName = null)

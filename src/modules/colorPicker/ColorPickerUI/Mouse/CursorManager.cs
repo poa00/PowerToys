@@ -4,6 +4,7 @@
 
 using System;
 using System.IO.Abstractions;
+
 using ManagedCommon;
 using Microsoft.Win32;
 
@@ -16,7 +17,7 @@ namespace ColorPicker.Mouse
         private const string IBeamRegistryName = "IBeam";
         private const string CrosshairRegistryName = "Crosshair";
         private const string HandRegistryName = "Hand";
-        private const string ColorPickerCursorName = "Resources\\colorPicker.cur";
+        private const string ColorPickerCursorName = "Assets\\ColorPicker\\colorPicker.cur";
 
         private static string _originalArrowCursorPath;
         private static string _originalIBeamCursorPath;

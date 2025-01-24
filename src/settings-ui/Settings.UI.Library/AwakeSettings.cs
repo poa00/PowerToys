@@ -4,7 +4,9 @@
 
 using System;
 using System.Linq;
+using System.Reflection;
 using System.Text.Json.Serialization;
+
 using Microsoft.PowerToys.Settings.UI.Library.Interfaces;
 
 namespace Microsoft.PowerToys.Settings.UI.Library
@@ -12,12 +14,11 @@ namespace Microsoft.PowerToys.Settings.UI.Library
     public class AwakeSettings : BasePTModuleSettings, ISettingsConfig, ICloneable
     {
         public const string ModuleName = "Awake";
-        public const string ModuleVersion = "0.0.2";
 
         public AwakeSettings()
         {
             Name = ModuleName;
-            Version = ModuleVersion;
+            Version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             Properties = new AwakeProperties();
         }
 
@@ -37,7 +38,9 @@ namespace Microsoft.PowerToys.Settings.UI.Library
                     KeepDisplayOn = Properties.KeepDisplayOn,
                     IntervalMinutes = Properties.IntervalMinutes,
                     IntervalHours = Properties.IntervalHours,
-                    ExpirationDateTime = Properties.ExpirationDateTime,
+
+                    // Fix old buggy default value that might be saved in Settings. Some components don't deal well with negative time zones and minimum time offsets.
+                    ExpirationDateTime = Properties.ExpirationDateTime.Year < 2 ? DateTimeOffset.Now : Properties.ExpirationDateTime,
                 },
             };
         }

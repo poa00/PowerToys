@@ -2,7 +2,6 @@
 #include <interface/powertoy_module_interface.h>
 #include <common/SettingsAPI/settings_objects.h>
 #include <common/interop/shared_constants.h>
-#include "trace.h"
 #include "Generated Files/resource.h"
 #include <launcher\Microsoft.Launcher\LauncherConstants.h>
 #include <common/logger/logger.h>
@@ -34,13 +33,11 @@ BOOL APIENTRY DllMain(HMODULE /*hModule*/, DWORD ul_reason_for_call, LPVOID /*lp
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        Trace::RegisterProvider();
         break;
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
         break;
     case DLL_PROCESS_DETACH:
-        Trace::UnregisterProvider();
         break;
     }
 
@@ -246,7 +243,7 @@ public:
             std::wstring params;
             params += L" -powerToysPid " + std::to_wstring(powertoys_pid) + L" ";
             params += L"--started-from-runner ";
-            runExecutablePath += L"\\modules\\launcher\\PowerToys.PowerLauncher.exe";
+            runExecutablePath += L"\\PowerToys.PowerLauncher.exe";
             processStarted = RunNonElevatedFailsafe(runExecutablePath, params, modulePath).has_value();
         }
         else
@@ -259,7 +256,7 @@ public:
 
             SHELLEXECUTEINFOW sei{ sizeof(sei) };
             sei.fMask = { SEE_MASK_NOCLOSEPROCESS | SEE_MASK_FLAG_NO_UI };
-            sei.lpFile = L"modules\\launcher\\PowerToys.PowerLauncher.exe";
+            sei.lpFile = L"PowerToys.PowerLauncher.exe";
             sei.nShow = SW_SHOWNORMAL;
             sei.lpParameters = executable_args.data();
 

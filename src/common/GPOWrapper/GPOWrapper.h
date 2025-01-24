@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include "GPOWrapper.g.h"
 #include <common/utils/gpo.h>
 
@@ -9,12 +9,15 @@ namespace winrt::PowerToys::GPOWrapper::implementation
         GPOWrapper() = default;
         static GpoRuleConfigured GetConfiguredAlwaysOnTopEnabledValue();
         static GpoRuleConfigured GetConfiguredAwakeEnabledValue();
+        static GpoRuleConfigured GetConfiguredCmdNotFoundEnabledValue();
         static GpoRuleConfigured GetConfiguredColorPickerEnabledValue();
+        static GpoRuleConfigured GetConfiguredCropAndLockEnabledValue();
         static GpoRuleConfigured GetConfiguredFancyZonesEnabledValue();
         static GpoRuleConfigured GetConfiguredFileLocksmithEnabledValue();
         static GpoRuleConfigured GetConfiguredSvgPreviewEnabledValue();
         static GpoRuleConfigured GetConfiguredMarkdownPreviewEnabledValue();
         static GpoRuleConfigured GetConfiguredMonacoPreviewEnabledValue();
+        static GpoRuleConfigured GetConfiguredMouseWithoutBordersEnabledValue();
         static GpoRuleConfigured GetConfiguredPdfPreviewEnabledValue();
         static GpoRuleConfigured GetConfiguredGcodePreviewEnabledValue();
         static GpoRuleConfigured GetConfiguredSvgThumbnailsEnabledValue();
@@ -31,13 +34,34 @@ namespace winrt::PowerToys::GPOWrapper::implementation
         static GpoRuleConfigured GetConfiguredPowerRenameEnabledValue();
         static GpoRuleConfigured GetConfiguredPowerLauncherEnabledValue();
         static GpoRuleConfigured GetConfiguredQuickAccentEnabledValue();
+        static GpoRuleConfigured GetConfiguredRegistryPreviewEnabledValue();
         static GpoRuleConfigured GetConfiguredScreenRulerEnabledValue();
         static GpoRuleConfigured GetConfiguredShortcutGuideEnabledValue();
         static GpoRuleConfigured GetConfiguredTextExtractorEnabledValue();
-        static GpoRuleConfigured GetConfiguredPastePlainEnabledValue();
-        static GpoRuleConfigured GetConfiguredVideoConferenceMuteEnabledValue();
+        static GpoRuleConfigured GetConfiguredAdvancedPasteEnabledValue();
+        static GpoRuleConfigured GetConfiguredZoomItEnabledValue();
+        static GpoRuleConfigured GetConfiguredPeekEnabledValue();
+        static GpoRuleConfigured GetDisableNewUpdateToastValue();
         static GpoRuleConfigured GetDisableAutomaticUpdateDownloadValue();
+        static GpoRuleConfigured GetDisableShowWhatsNewAfterUpdatesValue();
         static GpoRuleConfigured GetAllowExperimentationValue();
+        static GpoRuleConfigured GetRunPluginEnabledValue(winrt::hstring const& pluginID);
+        static GpoRuleConfigured GetConfiguredEnvironmentVariablesEnabledValue();
+        static GpoRuleConfigured GetConfiguredQoiPreviewEnabledValue();
+        static GpoRuleConfigured GetConfiguredQoiThumbnailsEnabledValue();
+        static GpoRuleConfigured GetAllowedAdvancedPasteOnlineAIModelsValue();
+        static GpoRuleConfigured GetConfiguredNewPlusEnabledValue();
+        static GpoRuleConfigured GetConfiguredWorkspacesEnabledValue();
+        static GpoRuleConfigured GetConfiguredMwbClipboardSharingEnabledValue();
+        static GpoRuleConfigured GetConfiguredMwbFileTransferEnabledValue();
+        static GpoRuleConfigured GetConfiguredMwbUseOriginalUserInterfaceValue();
+        static GpoRuleConfigured GetConfiguredMwbDisallowBlockingScreensaverValue();
+        static GpoRuleConfigured GetConfiguredMwbSameSubnetOnlyValue();
+        static GpoRuleConfigured GetConfiguredMwbValidateRemoteIpValue();
+        static GpoRuleConfigured GetConfiguredMwbDisableUserDefinedIpMappingRulesValue();
+        static winrt::hstring GPOWrapper::GetConfiguredMwbPolicyDefinedIpMappingRules();
+        static GpoRuleConfigured GetConfiguredNewPlusHideTemplateFilenameExtensionValue();
+        static GpoRuleConfigured GetAllowDataDiagnosticsValue();
     };
 }
 

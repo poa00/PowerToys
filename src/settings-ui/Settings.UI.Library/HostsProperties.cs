@@ -3,6 +3,8 @@
 // See the LICENSE file in the project root for more information.
 
 using System.Text.Json.Serialization;
+
+using Settings.UI.Library.Attributes;
 using Settings.UI.Library.Enumerations;
 
 namespace Microsoft.PowerToys.Settings.UI.Library
@@ -18,14 +20,17 @@ namespace Microsoft.PowerToys.Settings.UI.Library
         [JsonConverter(typeof(BoolPropertyJsonConverter))]
         public bool LoopbackDuplicates { get; set; }
 
-        public AdditionalLinesPosition AdditionalLinesPosition { get; set; }
+        public HostsAdditionalLinesPosition AdditionalLinesPosition { get; set; }
+
+        public HostsEncoding Encoding { get; set; }
 
         public HostsProperties()
         {
             ShowStartupWarning = true;
             LaunchAdministrator = true;
             LoopbackDuplicates = false;
-            AdditionalLinesPosition = AdditionalLinesPosition.Top;
+            AdditionalLinesPosition = HostsAdditionalLinesPosition.Top;
+            Encoding = HostsEncoding.Utf8;
         }
     }
 }

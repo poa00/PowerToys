@@ -4,40 +4,49 @@
 
 [How to use PowerToys][usingPowerToys-docs-link] | [Downloads & Release notes][github-release-link] | [Contributing to PowerToys](#contributing) | [What's Happening](#whats-happening) | [Roadmap](#powertoys-roadmap)
 
-## Build status
-
-| Architecture | Solution (Main) | Solution (Stable) | Installer (Main) |
-|--------------|-----------------|-------------------|------------------|
-| x64 | [![Build Status for Main](https://dev.azure.com/ms/PowerToys/_apis/build/status/microsoft.PowerToys?branchName=main&jobName=Build%20x64%20Release)](https://dev.azure.com/ms/PowerToys/_build/latest?definitionId=219&branchName=main&jobName=Build%20x64%20Release) | [![Build Status for Stable](https://dev.azure.com/ms/PowerToys/_apis/build/status/microsoft.PowerToys?branchName=stable&jobName=Build%20x64%20Release)](https://dev.azure.com/ms/PowerToys/_build/latest?definitionId=219&branchName=stable) | [![Build Status Installer pipeline](https://dev.azure.com/microsoft/Dart/_apis/build/status/PowerToys/PowerToys%20Signed%20YAML%20Release%20Build?branchName=main&jobName=Build&configuration=Build%20Release_x64)](https://dev.azure.com/microsoft/Dart/_build/latest?definitionId=76541&branchName=main) |
-| ARM64 | [![Build Status for Main](https://dev.azure.com/ms/PowerToys/_apis/build/status/microsoft.PowerToys?branchName=main&jobName=Build%20arm64%20Release)](https://dev.azure.com/ms/PowerToys/_build/latest?definitionId=219&branchName=main) | [![Build Status for Main](https://dev.azure.com/ms/PowerToys/_apis/build/status/microsoft.PowerToys?branchName=main&jobName=Build%20arm64%20Release)](https://dev.azure.com/ms/PowerToys/_build/latest?definitionId=219&branchName=stable) | [![Build Status Installer pipeline](https://dev.azure.com/microsoft/Dart/_apis/build/status/PowerToys/PowerToys%20Signed%20YAML%20Release%20Build?branchName=main&jobName=Build&configuration=Build%20Release_arm64)](https://dev.azure.com/microsoft/Dart/_build/latest?definitionId=76541&branchName=main) |
-
 ## About
 
-Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity. For more info on [PowerToys overviews and how to use the utilities][usingPowerToys-docs-link], or any other tools and resources for [Windows development environments](https://learn.microsoft.com/windows/dev-environment/overview), head over to [learn.microsoft.com][usingPowerToys-docs-link]! 
+Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity. For more info on [PowerToys overviews and how to use the utilities][usingPowerToys-docs-link], or any other tools and resources for [Windows development environments](https://learn.microsoft.com/windows/dev-environment/overview), head over to [learn.microsoft.com][usingPowerToys-docs-link]!
 
 |              | Current utilities: |              |
 |--------------|--------------------|--------------|
-| [Always on Top](https://aka.ms/PowerToysOverview_AoT) | [PowerToys Awake](https://aka.ms/PowerToysOverview_Awake) | [Color Picker](https://aka.ms/PowerToysOverview_ColorPicker) |
-| [FancyZones](https://aka.ms/PowerToysOverview_FancyZones) | [File Explorer Add-ons](https://aka.ms/PowerToysOverview_FileExplorerAddOns) | [File Locksmith](https://aka.ms/PowerToysOverview_FileLocksmith) |
-| [Hosts File Editor](https://aka.ms/PowerToysOverview_HostsFileEditor) | [Image Resizer](https://aka.ms/PowerToysOverview_ImageResizer) | [Keyboard Manager](https://aka.ms/PowerToysOverview_KeyboardManager) |
-| [Mouse utilities](https://aka.ms/PowerToysOverview_MouseUtilities) | [Paste as Plain Text](https://aka.ms/PowerToysOverview_PastePlain) | [PowerRename](https://aka.ms/PowerToysOverview_PowerRename) |
-| [PowerToys Run](https://aka.ms/PowerToysOverview_PowerToysRun) | [Quick Accent](https://aka.ms/PowerToysOverview_QuickAccent) | [Screen Ruler](https://aka.ms/PowerToysOverview_ScreenRuler) |
-| [Shortcut Guide](https://aka.ms/PowerToysOverview_ShortcutGuide) | [Text Extractor](https://aka.ms/PowerToysOverview_TextExtractor) | [Video Conference Mute](https://aka.ms/PowerToysOverview_VideoConference) |
+| [Advanced Paste](https://aka.ms/PowerToysOverview_AdvancedPaste) | [Always on Top](https://aka.ms/PowerToysOverview_AoT) | [PowerToys Awake](https://aka.ms/PowerToysOverview_Awake) |
+| [Command Not Found](https://aka.ms/PowerToysOverview_CmdNotFound) | [Color Picker](https://aka.ms/PowerToysOverview_ColorPicker) | [Crop And Lock](https://aka.ms/PowerToysOverview_CropAndLock) |
+| [Environment Variables](https://aka.ms/PowerToysOverview_EnvironmentVariables) | [FancyZones](https://aka.ms/PowerToysOverview_FancyZones) | [File Explorer Add-ons](https://aka.ms/PowerToysOverview_FileExplorerAddOns) |
+| [File Locksmith](https://aka.ms/PowerToysOverview_FileLocksmith) | [Hosts File Editor](https://aka.ms/PowerToysOverview_HostsFileEditor) | [Image Resizer](https://aka.ms/PowerToysOverview_ImageResizer) |
+| [Keyboard Manager](https://aka.ms/PowerToysOverview_KeyboardManager) | [Mouse utilities](https://aka.ms/PowerToysOverview_MouseUtilities) | [Mouse Without Borders](https://aka.ms/PowerToysOverview_MouseWithoutBorders) |
+| [New+](https://aka.ms/PowerToysOverview_NewPlus) | [Peek](https://aka.ms/PowerToysOverview_Peek) | [Paste as Plain Text](https://aka.ms/PowerToysOverview_PastePlain) |
+| [PowerRename](https://aka.ms/PowerToysOverview_PowerRename) | [PowerToys Run](https://aka.ms/PowerToysOverview_PowerToysRun) | [Quick Accent](https://aka.ms/PowerToysOverview_QuickAccent) |
+| [Registry Preview](https://aka.ms/PowerToysOverview_RegistryPreview) | [Screen Ruler](https://aka.ms/PowerToysOverview_ScreenRuler) | [Shortcut Guide](https://aka.ms/PowerToysOverview_ShortcutGuide) |
+| [Text Extractor](https://aka.ms/PowerToysOverview_TextExtractor) | [Workspaces](https://aka.ms/PowerToysOverview_Workspaces) | [ZoomIt](https://aka.ms/PowerToysOverview_PowerToysOverview_ZoomIt) |
 
 ## Installing and running Microsoft PowerToys
 
 ### Requirements
 
 - Windows 11 or Windows 10 version 2004 (code name 20H1 / build number 19041) or newer.
+- x64 or ARM64 processor
 - Our installer will install the following items:
    - [Microsoft Edge WebView2 Runtime](https://go.microsoft.com/fwlink/p/?LinkId=2124703) bootstrapper. This will install the latest version.
 
 ### Via GitHub with EXE [Recommended]
 
-Go to [Microsoft PowerToys GitHub releases page][github-release-link], click on `Assets` at the bottom to show the files available in the release. Please use the appropriate PowerToys installer that matches your machine's architecture. For most, it is `x64`.
+Go to the [Microsoft PowerToys GitHub releases page][github-release-link] and click on `Assets` at the bottom to show the files available in the release. Please use the appropriate PowerToys installer that matches your machine's architecture and install scope. For most, it is `x64` and per-user.
+
+<!-- items that need to be updated release to release -->
+[github-next-release-work]: https://github.com/microsoft/PowerToys/issues?q=is%3Aissue+milestone%3A%22PowerToys+0.88%22
+[github-current-release-work]: https://github.com/microsoft/PowerToys/issues?q=is%3Aissue+milestone%3A%22PowerToys+0.87%22
+[ptUserX64]: https://github.com/microsoft/PowerToys/releases/download/v0.87.1/PowerToysUserSetup-0.87.1-x64.exe 
+[ptUserArm64]: https://github.com/microsoft/PowerToys/releases/download/v0.87.1/PowerToysUserSetup-0.87.1-arm64.exe 
+[ptMachineX64]: https://github.com/microsoft/PowerToys/releases/download/v0.87.1/PowerToysSetup-0.87.1-x64.exe 
+[ptMachineArm64]: https://github.com/microsoft/PowerToys/releases/download/v0.87.1/PowerToysSetup-0.87.1-arm64.exe
  
- - **For x64 processors (most common):** [PowerToysSetup-0.68.0-x64.exe](https://github.com/microsoft/PowerToys/releases/download/v0.68.0/PowerToysSetup-0.68.0-x64.exe)
- - **For ARM64 processors:** [PowerToysSetup-0.68.0-arm64.exe](https://github.com/microsoft/PowerToys/releases/download/v0.68.0/PowerToysSetup-0.68.0-arm64.exe)
+|  Description   | Filename | sha256 hash |
+|----------------|----------|-------------|
+| Per user - x64       | [PowerToysUserSetup-0.87.1-x64.exe][ptUserX64] | 8EFAF47ED00BF230D2C2CC3CB6765C903A6A47E0AAED0BBB329CEF918207B486 |
+| Per user - ARM64     | [PowerToysUserSetup-0.87.1-arm64.exe][ptUserArm64] | 212FC8055789BD2DC4DE554B9AEE291A9C077907E263A302939266263A9D512B |
+| Machine wide - x64   | [PowerToysSetup-0.87.1-x64.exe][ptMachineX64] | 69AD65DDAC6436AEF292D2CC6AB1530021CE98083CB3F5FD3380A52A3B0DBB9A |
+| Machine wide - ARM64 | [PowerToysSetup-0.87.1-arm64.exe][ptMachineArm64] | AEC9F1D02F1E23F0C1FCFDF95C337C962902394F44C0568012DF78BEDB45CF19 |
 
 This is our preferred method.
 
@@ -46,23 +55,34 @@ This is our preferred method.
 Install from the [Microsoft Store's PowerToys page][microsoft-store-link]. You must be using the [new Microsoft Store](https://blogs.windows.com/windowsExperience/2021/06/24/building-a-new-open-microsoft-store-on-windows-11/) which is available for both Windows 11 and Windows 10.
 
 ### Via WinGet
-Download PowerToys from [WinGet][winget-link]. To install PowerToys, run the following command from the command line / PowerShell:
+Download PowerToys from [WinGet][winget-link]. Updating PowerToys via winget will respect current PowerToys installation scope. To install PowerToys, run the following command from the command line / PowerShell:
 
+#### User scope installer [default]
 ```powershell
 winget install Microsoft.PowerToys -s winget
+```
+
+#### Machine-wide scope installer
+
+```powershell
+winget install --scope machine Microsoft.PowerToys -s winget
 ```
 
 ### Other install methods
 
 There are [community driven install methods](./doc/unofficialInstallMethods.md) such as Chocolatey and Scoop. If these are your preferred install solutions, you can find the install instructions there.
 
+## Third-Party Run Plugins
+
+There is a collection of [third-party plugins](./doc/thirdPartyRunPlugins.md) created by the community that aren't distributed with PowerToys.
+
 ## Contributing
 
-This project welcomes contributions of all types. Help spec'ing, design, documentation, finding bugs are ways everyone can help on top of coding features / bug fixes. We are excited to work with the power user community to build a set of tools for helping you get the most out of Windows.
+This project welcomes contributions of all types.  Besides  coding features / bug fixes,  other ways to assist include spec writing, design, documentation, and finding bugs. We are excited to work with the power user community to build a set of tools for helping you get the most out of Windows.
 
-We ask that **before you start work on a feature that you would like to contribute**, please read our [Contributor's Guide](CONTRIBUTING.md). We will be happy to work with you to figure out the best approach, provide guidance and mentorship throughout feature development, and help avoid any wasted or duplicate effort.
+We ask that **before you start work on a feature that you would like to contribute**, please read our [Contributor's Guide](CONTRIBUTING.md). We would be happy to work with you to figure out the best approach, provide guidance and mentorship throughout feature development, and help avoid any wasted or duplicate effort.
 
-Most contributions require you to agree to a [Contributor License Agreement (CLA)][oss-CLA] declaring that you have the right to, and actually do, grant us the rights to use your contribution.
+Most contributions require you to agree to a [Contributor License Agreement (CLA)][oss-CLA] declaring that you grant us the rights to use your contribution and that you have permission to do so.
 
 For guidance on developing for PowerToys, please read the [developer docs](/doc/devdocs) for a detailed breakdown. This includes how to setup your computer to compile.
 
@@ -72,110 +92,123 @@ For guidance on developing for PowerToys, please read the [developer docs](/doc/
 
 Our [prioritized roadmap][roadmap] of features and utilities that the core team is focusing on.
 
-### 0.68 - February 2023 Update
+### 0.87 - December 2024 Update
 
-In this release, we focused on releasing new features, stability and improvements.
+In this release, we focused on new features, stability, and improvements.
 
 **Highlights**
 
-- New utility: Paste as Plain Text allows pasting the text contents of your clipboard without formatting. Note: the formatted text in the clipboard is replaced with the unformatted text. Thanks [@carlos-zamora](https://github.com/carlos-zamora)!
-- New utility: Mouse Jump allows to quickly move the mouse pointer long distances on a single screen or across multiple screens. Thanks [@mikeclayton](https://github.com/mikeclayton)!
-- Add new GPO policies for automatic update downloads and update toast notifications. Thanks [@htcfreek](https://github.com/htcfreek)!
-- Support MSC and CPL files in "Run command" results of PowerToys Run Program plugin. Thanks [@htcfreek](https://github.com/htcfreek)!
-- Add support for log2 and log10 in PowerToys Run Calculator plugin. Thanks [@RickLuiken](https://github.com/RickLuiken)!
-- Added experimentation to PowerToys first run experience.  There are current page which says "welcome" and a variant with direct instructions on how to use some of the utilities.  We want to see if directly showing how to use PowerToys leads to more people using the features :) 
+ - Advanced Paste has a new feature called "Advanced AI" that uses Semantic Kernel to allow setting up the orchestration of sequential clipboard transformations.
+ - Workspaces supports Progressive Web Applications.
+ - Workspaces has a new feature to move existing windows instead of creating new ones.
+ - Mouse Jump added new settings to allow customization of screens pop-up. Thanks [@mikeclayton](https://github.com/mikeclayton)!
+ - New+ now works on Windows 10. Thanks [@cgaarden](https://github.com/cgaarden)!
+ - Quick Accent allows selecting the character sets that should appear on the UI. Thanks [@Sirozha1337](https://github.com/Sirozha1337)!
 
-### General
+### Advanced Paste
 
-- Improve metered network detection in runner. Thanks [@davidegiacometti](https://github.com/davidegiacometti)!
-- Update PowerToys logo used by installer. Thanks [@ChaseKnowlden](https://github.com/ChaseKnowlden1)!
-- Add new GPO policies for automatic update downloads and update toast notifications. Thanks [@htcfreek](https://github.com/htcfreek)!
-- Update copyright year to 2023. Thanks [@ChaseKnowlden](https://github.com/ChaseKnowlden)!
+ - Added a new optional feature allowing using AI to set up the orchestration of sequential clipboard transformations.
 
-### FancyZones
+### Awake
 
-- Refactored and improved code quality.
-- Fix crashing on moving window between monitors with Win + arrows. (This was a hotfix for 0.67)
-- Fix issue causing window attributes to not be reset properly. (This was a hotfix for 0.67)
-- Fix issue causing window to not be adjusted when layout is changed. (This was a hotfix for 0.67)
-- Fix issue causing window not to be unsnapped on drag started. (This was a hotfix for 0.67)
-- Fix issue causing layouts not to be applied to new virtual desktops. (This was a hotfix for 0.67)
-- Fix issues causing windows not to be restored correctly to their last known zone.
+ - Initialization, logging and tray icon setup improvements. Thanks [@dend](https://github.com/dend)!
 
-### File explorer add-ons
+### File Explorer add-ons
 
-- Add Developer files previewer option to set max file size and fix styling issue. Thanks [@Aaron-Junker](https://github.com/Aaron-Junker)!
-- Improve Developer files previewer exception handling and printing of error messages.
-- Fix crash when generating PDF and Gcode file thumbnails. (This was a hotfix for 0.67)
+ - Preview Pane extensions now use the PerMonitorV2 DPI mode to fix errors on different scales. Thanks [@davidegiacometti](https://github.com/davidegiacometti)!
 
-### Hosts file editor
+### Keyboard Manager.
 
-- Improve hosts file loading. Thanks [@davidegiacometti](https://github.com/davidegiacometti)!
-- Improved duplicate hosts finding. Thanks [@davidegiacometti](https://github.com/davidegiacometti)!
+ - Added labels to the IME On, IME Off keys. Thanks [@kit494way](https://github.com/kit494way)!
+ - Fixed an issue that caused the Shift key to remain stuck if a numpad key was mapped to the Shift key.
 
-### Keyboard Manager
+### Monaco Preview
 
-- Fix typo in Keyboard Manager Editor. Thanks [@ChristianLW](https://github.com/ChristianLW)!
+ - Added support for .ahk files to be shown as a plaintext file in Peek and File Explorer add-ons. Thanks [@daverayment](https://github.com/daverayment)!
+ - Added support for .ion files to be shown as a plaintext file in Peek and File Explorer add-ons. Thanks [@octastylos-pseudodipteros](https://github.com/octastylos-pseudodipteros)!
+ - Added support for syntax highlighting for .srt files in Peek and File Explorer add-ons. Thanks [@PesBandi](https://github.com/PesBandi)!
 
-### Mouse Utils
+### Mouse Jump
 
-- Resolve grammatical error in Mouse Highlighter description. Thanks [@WordlessSafe1](https://github.com/WordlessSafe1)!
-- New utility: Mouse Jump allows to quickly move the mouse pointer long distances on single or across screens. Thanks [@mikeclayton](https://github.com/mikeclayton)!
+ - Allow customizing the appearance of the UI of the Mouse Jump pop-up. Thanks [@mikeclayton](https://github.com/mikeclayton)!
 
-### Paste as Plain Text
+### New+
 
-- New utility: Paste as Plain Text allows pasting the text contents of your clipboard without formatting. Note: the formatted text in the clipboard is replaced with the unformatted text. Thanks [@carlos-zamora](https://github.com/carlos-zamora)!
+ - Added support for Windows 10. Thanks [@cgaarden](https://github.com/cgaarden)!
+ - Fixed an issue causing the renaming of new files to not trigger some times. Thanks [@cgaarden](https://github.com/cgaarden)!
+ - Updated the New+ icons. Thanks [@niels9001](https://github.com/niels9001)!
+
+### Peek
+
+ - Peek now checks local capabilities to decide what image formats Image Previewer is able to support. Thanks [@daverayment](https://github.com/daverayment)!
+ - Fixed an issue causing the Code Files Previewer to not load correctly under certain conditions. Thanks [@daverayment](https://github.com/daverayment)!
+ - Refactored, improved and fixed logging when loading the user settings file. Thanks [@daverayment](https://github.com/daverayment)!
 
 ### PowerToys Run
 
-- Show Steam (steam://open/) shortcuts in the Program plugin. 
-- Localize paths of Program plugin results. Thanks [@htcfreek](https://github.com/htcfreek)!
-- Improved stability of the code used to get the localized names and paths. Thanks [@htcfreek](https://github.com/htcfreek)!
-- Support MSC and CPL files in "Run command" results of Program plugin. Thanks [@htcfreek](https://github.com/htcfreek)!
-- Added missing MSC and CPL settings to the results of Windows Settings plugin. Thanks [@htcfreek](https://github.com/htcfreek)!
-- System plugin: Setting for separate "Open/Empty Recycle bin" results or single result with context menu. (This was implemented based on user feedback for a change in the last build.) Thanks [@htcfreek](https://github.com/htcfreek)!
-- Add support for log2 and log10 in Calculator plugin. Thanks [@RickLuiken](https://github.com/RickLuiken)!
-- Removed the TimeZone plugin.
-- Fix the crash when loading thumbnail for PDF files. (This was a hotfix for 0.67)
-
-### Shortcut Guide
-
-- Added: Dismiss Shortcut Guide with mouse click. Thanks [@davidegiacometti](https://github.com/davidegiacometti)!
+ - Added a scoring function for proper ordering of the WindowWalker plugin results. Thanks [@andbartol](https://github.com/andbartol)!
+ - Added UUIDv7 support to the ValueGenerator plugin. Thanks [@frederik-hoeft](https://github.com/frederik-hoeft)!
+ - The calculator plugin now allows scientific notation numbers with a lowercase 'e'. Thanks [@PesBandi](https://github.com/PesBandi)!
+ - Ported the UI from WPF-UI to .NET 9 WPF, to fix "Desktop composition is disabled" crashes.
 
 ### Quick Accent
 
-- Added Lithuanian characters. Thanks [@saulens22](https://github.com/saulens22)!
-- Added additional (Chinese) characters. Thanks [@ChaseKnowlden](https://github.com/ChaseKnowlden)!
+ - Added a setting to allow selecting which character sets to show. Thanks [@Sirozha1337](https://github.com/Sirozha1337)!
 
+### Screen Ruler
+
+ - Added a Setting to also allow showing measurements in inches, centimeters or millimeters. Thanks [@Sophanatprime](https://github.com/Sophanatprime)!
 
 ### Settings
 
-- Add missing flyout borders on Windows 10. Thanks [@davidegiacometti](https://github.com/davidegiacometti)!
-- Add experimentation for oobe landing page. Thanks [@chenss3](https://github.com/chenss3)!
-- Show icons of user-installed PowerToys Run plugins. Thanks [@al2me6](https://github.com/al2me6)!
-- Fixed crash when clicking Browse for backup and restore location while running elevated.
-- Respect taskbar position when showing system tray flyout. (This was a hotfix for 0.67)
-- Show correct Hosts module image. (This was a hotfix for 0.67)
+ - Fixed an issue causing all the links to milestones in the "What's new?" OOBE page to point to the same milestone.
+ - Removed extra space from the Welcome page. Thanks [@agarwalishita](https://github.com/agarwalishita)!
+ - Updated left navigation bar icons. Thanks [@niels9001](https://github.com/niels9001)!
+ - Fixed accessibility issues in the dashboard page. Thanks [@davidegiacometti](https://github.com/davidegiacometti)!
+
+### Workspaces
+
+ - Added support for Progressive Web Applications to Workspaces.
+ - Implemented a feature to move existing windows instead of creating new ones.
+ - Fixed a crash when opening the workspaces editor that was caused by passing incorrect encoder parameters when saving Bitmap files.
+ - Workspaces editor position is now saved so that we can start it at the same position when we open it again.
+ - Fixed an issue causing many instances of the same application to be put in the same position instead of the intended position due to timer issues.
+ - Fixed detection of exact application version when many versions of the same application are installed.
+
+### Documentation
+
+ - Improved language in CONTRIBUTE.md. Thanks [@sanskaarz](https://github.com/sanskaarz)!
+ - Added Bilibili plugin mention to thirdPartyRunPlugins.md. Thanks [@Whuihuan](https://github.com/Whuihuan)!
+ - Added CanIUse and TailwindCSS plugins mention to thirdPartyRunPlugins.md. Thanks [@skttl](https://github.com/skttl)!
+ - Added HttpStatusCodes plugin mention to thirdPartyRunPlugins.md. Thanks [@grzhan](https://github.com/grzhan)!
+ - Updated COMMUNITY.md with more contributors.
 
 ### Development
 
-- Turned on C++ code analysis and incrementally fixing warnings.
-- Centralize .NET NuGet packages versions. Thanks [@snickler](https://github.com/snickler)!
-- Separate PowerToys installer logs and MSI logs to different files.
-- Added new GPO rules to the reporting tool.
-- Move PowerToys registry entries back to HKLM to fix context menu entries not working on some configurations. (This was a hotfix for 0.67)
+ - Upgraded to .NET 9. Thanks [@snickler](https://github.com/snickler)!
+ - Fixed building on Visual Studio 17.12.
+ - Upgraded the System.IO.Abstractions dependency to 21.0.29. Thanks [@davidegiacometti](https://github.com/davidegiacometti)!
+ - Upgraded the WindowsAppSDK dependency to 1.6.241114003. Thanks [@shuaiyuanxx](https://github.com/shuaiyuanxx)!
+ - Upgraded the MSTest dependency to 3.6.3. Thanks [@Youssef1313](https://github.com/Youssef1313)!
+ - Upgraded the check-spelling CI dependency to 0.0.24 and fixed related spell checking issues. Thanks [@jsoref](https://github.com/jsoref)!
+ - Removed duplicate names from the spellcheck allowed names file. Thanks [@htcfreek](https://github.com/htcfreek)!
+ - Improved logging of asynchronous methods call stacks when logging an error.
+ - Created a MSBuild props file to be imported by other projects to enable AOT support.
+ - Made the Peek utility source code AOT compatible.
+ - Updated .editorconfig rules to relax squiggly IDE errors in Visual Studio 17.12. Thanks [@snickler](https://github.com/snickler)!
+ - Moved Xaml.Styler from the root to the src folder.
 
-#### What is being planned for version 0.69
+#### What is being planned for version 0.88
 
-For [v0.69][github-next-release-work], we'll work on below:
+For [v0.88][github-next-release-work], we'll work on the items below:
 
-- Allow installing without UAC.
-- New utility: [PowerToys Peek](https://github.com/microsoft/PowerToys/issues/80)
-- Stability / bug fixes
+ - Stability / bug fixes
+ - New module: File Actions Menu
+ - Integrate Sysinternals ZoomIt
 
 ## PowerToys Community
 
-The PowerToys team is extremely grateful to have the [support of an amazing active community][community-link]. The work you do is incredibly important. PowerToys wouldn’t be nearly what it is today without your help filing bugs, updating documentation, guiding the design, or writing features. We want to say thank you and take time to recognize your work.  Month over month, you directly help make PowerToys a better piece of software.
+The PowerToys team is extremely grateful to have the [support of an amazing active community][community-link]. The work you do is incredibly important. PowerToys wouldn’t be nearly what it is today without your help filing bugs, updating documentation, guiding the design, or writing features. We want to say thank you and take time to recognize your work.  Month by month, you directly help make PowerToys a better piece of software.
 
 ## Code of Conduct
 
@@ -183,7 +216,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct][oss-conduct
 
 ## Privacy Statement
 
-The application logs basic telemetry. Our Telemetry Data page (Coming Soon) has the trends from the telemetry. Please read the [Microsoft privacy statement][privacy-link] for more information.
+The application logs basic diagnostic data (telemetry). For more information on privacy and what we collect, see our [PowerToys Data and Privacy documentation](https://aka.ms/powertoys-data-and-privacy-documentation).
 
 [oss-CLA]: https://cla.opensource.microsoft.com
 [oss-conduct-code]: CODE_OF_CONDUCT.md
@@ -193,10 +226,5 @@ The application logs basic telemetry. Our Telemetry Data page (Coming Soon) has 
 [winget-link]: https://github.com/microsoft/winget-cli#installing-the-client
 [roadmap]: https://github.com/microsoft/PowerToys/wiki/Roadmap
 [privacy-link]: http://go.microsoft.com/fwlink/?LinkId=521839
-[vidConfOverview]: https://aka.ms/PowerToysOverview_VideoConference
 [loc-bug]: https://github.com/microsoft/PowerToys/issues/new?assignees=&labels=&template=translation_issue.md&title=
 [usingPowerToys-docs-link]: https://aka.ms/powertoys-docs
-
-<!-- items that need to be updated release to release -->
-[github-next-release-work]: https://github.com/microsoft/PowerToys/issues?q=is%3Aopen+is%3Aissue+project%3Amicrosoft%2FPowerToys%2F42
-[github-current-release-work]: https://github.com/microsoft/PowerToys/issues?q=is%3Aopen+is%3Aissue+project%3Amicrosoft%2FPowerToys%2F41
